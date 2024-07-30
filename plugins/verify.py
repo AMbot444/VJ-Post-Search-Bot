@@ -22,7 +22,7 @@ async def _verify(bot, message):
        return await message.reply(f"❌ {user_name} Need to start me in PM!")
     if message.from_user.id != user_id:
        return await message.reply(f"<b>Only {user.mention} can use this command 😁</b>")
-    if verified==True:
+    if verified==false:
        return await message.reply("<b>This Group is already verified!</b>")
     try:
        link = (await bot.get_chat(message.chat.id)).invite_link     
